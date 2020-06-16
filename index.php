@@ -18,7 +18,7 @@
         document.getElementById("scanCode").textContent = stringifiedResult;
       });
     }
-    liff.init({ liffId: "your-liff-id" }, () => {}, err => console.error(err.code, error.message));
+    liff.init({ liffId: "1654351482-62KJ4VlG" }, () => {}, err => console.error(err.code, error.message));
   </script>
 </body>
 </html>
