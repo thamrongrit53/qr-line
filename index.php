@@ -23,13 +23,12 @@
     }
     liff.init({ liffId: "1654351482-62KJ4VlG" }, () => {}, err => console.error(err.code, error.message));
   </script>
-  
+
   <img id="pictureUrl" width="25%">
   <p id="userId"></p>
   <p id="displayName"></p>
   <p id="statusMessage"></p>
   <p id="getDecodedIDToken"></p>
-  <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
   <script>
     function runApp() {
       liff.getProfile().then(profile => {
@@ -40,7 +39,7 @@
         document.getElementById("getDecodedIDToken").innerHTML = '<b>Email:</b> ' + liff.getDecodedIDToken().email;
       }).catch(err => console.error(err));
     }
-    liff.init({ liffId: "YOUT-LIFF-ID" }, () => {
+    liff.init({ liffId: "1654351482-62KJ4VlG" }, () => {
       if (liff.isLoggedIn()) {
         runApp()
       } else {
