@@ -52,9 +52,7 @@
         const stringifiedResult = JSON.stringify(result);
         alert(stringifiedResult);
         document.getElementById("scanCode").textContent = stringifiedResult;
-        var text =this.stringifiedResult;
-
-        if (this.text["value"]==="123") {
+      if (stringifiedResult.value === "123") {
             location.replace("https://www.w3schools.com")
         }
 
