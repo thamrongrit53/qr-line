@@ -49,11 +49,9 @@
      function scanCode() {
       liff.scanCode().then(result => {
         var stringifiedResult = JSON.stringify(result.value);
-        alert(stringifiedResult);
-        document.getElementById("scanCode").textContent = stringifiedResult;
-
-        if (stringifiedResult == "123") {
-          setTimeout("location.href = 'https://www.w3schools.com';",500);
+        if (stringifiedResult=="123") {
+             alert(stringifiedResult);
+             document.getElementById("scanCode").textContent = stringifiedResult;
         }
 
       });
