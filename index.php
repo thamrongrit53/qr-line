@@ -18,7 +18,12 @@
       liff.scanCode().then(result => {
         const stringifiedResult = JSON.stringify(result);
         alert(stringifiedResult);
-        document.getElementById("scanCode").textContent = stringifiedResult;
+       document.getElementById("scanCode").textContent = stringifiedResult;
+       if(stringifiedResult =="123456789"){
+          window.location.assign("https://www.w3schools.com")
+          }else{
+           alert("oohh on"); 
+          } 
       });
     }
     liff.init({ liffId: "1654351482-62KJ4VlG" }, () => {}, err => console.error(err.code, error.message));
