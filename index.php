@@ -52,7 +52,7 @@
         alert(stringifiedResult);
         document.getElementById("scanCode").textContent = stringifiedResult;
 
-        if (stringifiedResult === "123") {
+        if (stringifiedResult == "123") {
           setTimeout("location.href = 'https://www.w3schools.com';",500);
         }
 
