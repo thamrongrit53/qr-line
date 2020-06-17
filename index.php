@@ -52,10 +52,6 @@
         alert(stringifiedResult);
         document.getElementById("scanCode").textContent = stringifiedResult.value;
 
-        if (stringifiedResult.value === "123") {
-          setTimeout("location.href = 'https://www.w3schools.com';",500);
-        }
-
       });
     }
     liff.init({ liffId: "1654351482-62KJ4VlG" }, () => {}, err => console.error(err.code, error.message));
