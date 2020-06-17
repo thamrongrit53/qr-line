@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-   <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
+  
   <style>
     #pictureUrl { display: block; margin: 0 auto }
   </style>
@@ -16,9 +16,12 @@
 <body>
   <div class="container">
   <h2>Sbac Care</h2>
-  <img id="pictureUrl">
+  <img id="pictureUrl" width="25%">
+  <p id="userId"></p>
   <p id="displayName"></p>
   <p id="statusMessage"></p>
+  <p id="getDecodedIDToken"></p>
+   <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
 <br>
 <p id="scanCode"></p>
 
@@ -46,8 +49,8 @@
      function scanCode() {
       liff.scanCode().then(result => {
         const stringifiedResult = JSON.stringify(result);
-        alert(stringifiedResult);
-        document.getElementById("scanCode").textContent = stringifiedResult["value"];
+        alert(stringifiedResult.value);
+        document.getElementById("scanCode").textContent = stringifiedResult.value;
 
         if (stringifiedResult.value === "123") {
             location.replace("https://www.w3schools.com")
