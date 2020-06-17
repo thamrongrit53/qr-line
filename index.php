@@ -53,7 +53,7 @@
         document.getElementById("scanCode").textContent = stringifiedResult.value;
 
         if (stringifiedResult.value === "123") {
-            location.replace("https://www.w3schools.com")
+          setTimeout("location.href = 'https://www.w3schools.com';",500);
         }
 
       });
