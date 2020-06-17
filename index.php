@@ -48,7 +48,7 @@
 
      function scanCode() {
       liff.scanCode().then(result => {
-        var stringifiedResult = JSON.parse(result);
+        const stringifiedResult = JSON.parse(result);
         alert(stringifiedResult);
         document.getElementById("scanCode").textContent = stringifiedResult.value;
 
