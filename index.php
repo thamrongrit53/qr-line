@@ -20,7 +20,7 @@
         alert(stringifiedResult);
        document.getElementById("scanCode").textContent = stringifiedResult;
        if(stringifiedResult =="123456789"){
-          window.location.assign("https://www.w3schools.com")
+          window.location.assign("https://www.w3schools.com");
           }else{
            alert("oohh on"); 
           } 
