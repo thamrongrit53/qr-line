@@ -2,38 +2,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MY APP</title> 
+  <title>Sbac Care</title> 
+   <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
   <style>
     #pictureUrl { display: block; margin: 0 auto }
   </style>
 </head>
 <body>
-  <p id="scanCode"></p>
-  <p>
-    <button id="btnScanCode" onclick="scanCode();">Scan Code</button>
-  </p>
-  <script src="https://static.line-scdn.net/liff/edge/2.1/liff.js"></script>
-  <script>
-    function scanCode() {
-      liff.scanCode().then(result => {
-        const stringifiedResult = JSON.stringify(result);
-        alert(stringifiedResult);
-       document.getElementById("scanCode").textContent = stringifiedResult;
-       if(stringifiedResult =="123456789"){
-          window.location.assign("https://www.w3schools.com");
-          }else{
-           alert("oohh on"); 
-          } 
-      });
-    }
-    liff.init({ liffId: "1654351482-62KJ4VlG" }, () => {}, err => console.error(err.code, error.message));
-  </script>
+  
+ 
 
   <img id="pictureUrl" width="25%">
   <p id="userId"></p>
   <p id="displayName"></p>
   <p id="statusMessage"></p>
   <p id="getDecodedIDToken"></p>
+
+    <p id="scanCode"></p>
+  <p>
+    <button id="btnScanCode" onclick="scanCode();">Scan Code</button>
+  </p>
+
+
   <script>
     function runApp() {
       liff.getProfile().then(profile => {
@@ -51,6 +41,15 @@
         liff.login();
       }
     }, err => console.error(err.code, error.message));
+
+     function scanCode() {
+      liff.scanCode().then(result => {
+        const stringifiedResult = JSON.stringify(result);
+        alert(stringifiedResult);
+        document.getElementById("scanCode").textContent = stringifiedResult;
+      });
+    }
+    liff.init({ liffId: "1654351482-62KJ4VlG" }, () => {}, err => console.error(err.code, error.message));
   </script>
 </body>
 </html>
