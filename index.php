@@ -51,7 +51,7 @@
       liff.scanCode().then(result => {
         const stringifiedResult = JSON.stringify(result);
         alert(stringifiedResult);
-        document.getElementById("scanCode").textContent = stringifiedResult;
+        document.getElementById("scanCode").textContent = stringifiedResult.value;
       if (stringifiedResult.value === "123") {
             location.replace("https://www.w3schools.com")
         }
