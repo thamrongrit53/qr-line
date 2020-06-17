@@ -19,7 +19,7 @@
   <div class="card" style="width:400px">
     <img class="card-img-top"id="pictureUrl" alt="Card image" style="width:100%">
     <div class="card-body">
-      <h4 class="card-title" id="displayName"></h4>
+      <h4 class="card-title"><p id="displayName"></p></h4>
       <p class="card-text" id="statusMessage"></p>
     </div>
   </div>
@@ -52,9 +52,9 @@
         const stringifiedResult = JSON.stringify(result);
         alert(stringifiedResult);
         document.getElementById("scanCode").textContent = stringifiedResult;
-        var text =stringifiedResult;
-        console.log(this.text);
-        if (text==="123") {
+        var text =this.stringifiedResult;
+
+        if (this.text==="123") {
             location.replace("https://www.w3schools.com")
         }
 
