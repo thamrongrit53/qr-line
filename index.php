@@ -48,11 +48,11 @@
 
      function scanCode() {
       liff.scanCode().then(result => {
-        const stringifiedResult = JSON.stringify(result);
-        alert(stringifiedResult.value);
-        document.getElementById("scanCode").textContent = stringifiedResult.value;
+        const stringifiedResult = result;
+        alert(stringifiedResult);
+        document.getElementById("scanCode").textContent = stringifiedResult;
 
-        if (stringifiedResult.value === "123") {
+        if (stringifiedResult=== "123") {
             location.replace("https://www.w3schools.com")
         }
 
