@@ -49,7 +49,7 @@
      function scanCode() {
       liff.scanCode().then(result => {
         var stringifiedResult = JSON.stringify(result.value);
-        if (stringifiedResult=="123") {
+        if (this.stringifiedResult=="123") {
              alert(stringifiedResult);
              document.getElementById("scanCode").textContent = stringifiedResult;
         }
