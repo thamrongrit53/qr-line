@@ -54,7 +54,7 @@
         document.getElementById("scanCode").textContent = stringifiedResult;
         var text =this.stringifiedResult;
 
-        if (this.text==="123") {
+        if (this.text["value"]==="123") {
             location.replace("https://www.w3schools.com")
         }
 
