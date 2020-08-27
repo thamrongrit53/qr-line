@@ -1,6 +1,6 @@
 <?php
 
-$arr = array('id'=>1,'name_ch' => 1, 'ch' => 'on');
+$arr = array('id'=>1,'name_ch1' => 1, 'ch1' => 'on','name_ch2' => 2, 'ch2' => 'on');
 
 echo json_encode($arr);
 ?>
