@@ -4,7 +4,7 @@
 
 <h2>Web Controller LED</h2>
 
-<form action="web_control.php">
+<form action="web_control.php" method="POST">
   <label for="fname">name_ch1:</label><br>
   <input type="text"  name="name_ch1"><br>
   <label for="lname">ch1:</label><br>
