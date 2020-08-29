@@ -8,5 +8,5 @@ if(!empty($_POST['status']) && !empty($_POST['station']))
  
      echo $status;
      echo $station; 
-	$conn->close();
+	
 ?>
